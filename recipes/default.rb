@@ -1,10 +1,9 @@
 include_recipe 'apt'
 
-packages = ['openjdk-7-jre-headless',
-            'unzip',
-        	'xvfb'] 
-packages.each do |pkg|
-  apt_package pkg do
+%w(
+  openjdk-7-jre-headless unzip xvfb
+).each do |package_name|
+  package package_name do
     action :install
   end
 end

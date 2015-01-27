@@ -3,7 +3,7 @@ include_recipe 'selenium-webdriver::default'
 directory node['selenium']['server']['installpath']
 
 service "selenium" do
-	start_command "java -jar -Dselenium.LOGGER=#{node['selenium']['server']['logpath']}/selenium-server.log #{node['selenium']['server']['installpath']}/selenium-server-standalone.jar &"
+	start_command "sudo java -jar -Dselenium.LOGGER=#{node['selenium']['server']['logpath']}/selenium-server.log #{node['selenium']['server']['installpath']}/selenium-server-standalone.jar &"
 end
 
 bash "mode xvfb" do
@@ -18,6 +18,6 @@ end
 remote_file File.join(node['selenium']['server']['installpath'], 'selenium-server-standalone.jar') do
 	source "http://selenium-release.storage.googleapis.com/#{node['selenium']['server']['version']}/selenium-server-standalone-#{node['selenium']['server']['version']}.0.jar"
 	action :create
-	mode 0644
+	mode 0755
 	notifies :start, resources(:service => "selenium")
 end
