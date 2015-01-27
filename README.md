@@ -3,13 +3,13 @@ Selenium Webdriver Cookbook
 
 ## Introduction
 
-This cookbook install the [Selenium](http://www.seleniumhq.org/).
+This cookbook install the and configure Selenium Server, Selenium Grid, Drivers .
 
 ## Requirements
 
 Chef 0.10.10+ for platform_family use.
 
-## Platform Tested
+## Platforms Tested
 
 - Ubuntu 12.04 LTS 32-bit (hashicorp/precise32)
 
