@@ -1,4 +1,4 @@
-require 'chefspec'
+require 'spec_helper'
 
 describe 'selenium-webdriver::hub' do
   let(:chef_run) do

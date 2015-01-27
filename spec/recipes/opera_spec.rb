@@ -1,4 +1,4 @@
-require 'chefspec'
+require 'spec_helper'
 
 describe 'selenium-webdriver::opera' do
   let(:chef_run) do
