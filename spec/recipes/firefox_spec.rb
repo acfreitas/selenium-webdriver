@@ -1,4 +1,4 @@
-require 'chefspec'
+require 'spec_helper'
 
 describe 'selenium-webdriver::firefox' do
   let(:chef_run) do

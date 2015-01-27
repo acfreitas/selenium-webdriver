@@ -1,5 +1,6 @@
 Selenium Webdriver Cookbook
-====
+================
+[![Build Status](https://travis-ci.org/acfreitas/selenium-webdriver.svg?branch=master)](https://travis-ci.org/acfreitas/selenium-webdriver)
 
 ## Introduction
 

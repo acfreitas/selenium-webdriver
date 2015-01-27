@@ -1,4 +1,4 @@
-require 'chefspec'
+require 'spec_helper'
 
 describe 'selenium-webdriver::addrepos' do
   let(:chef_run) { ChefSpec::SoloRunner.converge(described_recipe) }
