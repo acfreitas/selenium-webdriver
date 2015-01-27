@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'rack', '~>1.1'
-gem 'rspec', :require => 'spec'
-gem 'knife-spec'
-gem 'chefspec'
+
+gem 'rspec', 		:require => 'spec'
+gem 'chefspec',		'~> 4.1'
+gem 'berkshelf',	'~> 3.2'

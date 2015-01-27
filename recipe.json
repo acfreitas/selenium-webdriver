@@ -26,6 +26,6 @@
     "recipe[selenium-webdriver::chrome]",
     "recipe[selenium-webdriver::node]",
     "recipe[selenium-webdriver::ghostdriver]",
-    "recipe[selenium::hub]"
+    "recipe[selenium-webdriver::hub]"
   ]
 }

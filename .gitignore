@@ -37,6 +37,10 @@ Gemfile.lock
 bower.json
 
 
+### Chef ###
+Berksfile.lock
+
+
 ### Vagrant ###
 .vagrant/
 
